@@ -13,6 +13,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE pledges (
+  id INTEGER PRIMARY KEY,
   amount TEXT,
   project_id INTEGER,
   user_id INTEGER
