@@ -1,7 +1,7 @@
 CREATE TABLE project (
   id INTEGER PRIMARY KEY,
-  name TEXT,
-  age INTEGER,
+  title TEXT,
+  category TEXT,
   gender CHAR(1),
   color TEXT,
   temperament TEXT,
