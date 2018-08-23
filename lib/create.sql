@@ -14,13 +14,7 @@ CREATE TABLE user (
 );
 
 CREATE TABLE pledge (
+  amount TEXT,
   project_id INTEGER,
-
-
-  name TEXT,
-  age INTEGER,
-  gender CHAR(1),
-  color TEXT,
-  temperament TEXT,
-  alive BOOLEAN
+  user_id INTEGER,
 );
