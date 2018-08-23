@@ -44,7 +44,12 @@ GROUP BY users.name HAVING SUM(pledges.amount);
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
-"Write your SQL query Here"
+  "SELECT projects.category, SUM(pledges.amount) - projects.funding_goal
+  FROM projects
+  INNER JOIN pledges
+  ON projects.id = pledges.project_id
+  GROUP BY projects.title HAVING SUM(pledges.amount) >= projects.funding_goal;
+  "
 end
 
 def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_books_category
