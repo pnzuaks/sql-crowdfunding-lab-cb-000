@@ -11,13 +11,9 @@ CREATE TABLE user (
   id INTEGER PRIMARY KEY,
   name TEXT,
   age INTEGER,
-  gender CHAR(1),
-  color TEXT,
-  temperament TEXT,
-  alive BOOLEAN
 );
 
-CREATE TABLE bears (
+CREATE TABLE pledge (
   id INTEGER PRIMARY KEY,
   name TEXT,
   age INTEGER,
