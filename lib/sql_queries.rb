@@ -44,12 +44,12 @@ GROUP BY users.name HAVING SUM(pledges.amount);
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
-  "SELECT projects.category, pledges.amount
+  "SELECT projects.category, ROUND(pledges.amount)
   FROM projects
   INNER JOIN pledges
   ON projects.id = pledges.project_id
   WHERE projects.category = 'music';
-  GROUP BY projects.category HAVING ROUND(pledges.amount) DESC;
+  GROUP BY projects.category DESC;
   "
 end
 
