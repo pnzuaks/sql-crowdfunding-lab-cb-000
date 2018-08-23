@@ -2,10 +2,8 @@ CREATE TABLE project (
   id INTEGER PRIMARY KEY,
   title TEXT,
   category TEXT,
-  gender CHAR(1),
-  color TEXT,
-  temperament TEXT,
-  alive BOOLEAN
+  funding_goal 
+  starting_date
 );
 
 CREATE TABLE bears (
