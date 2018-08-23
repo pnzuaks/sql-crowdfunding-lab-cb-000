@@ -14,7 +14,9 @@ CREATE TABLE user (
 );
 
 CREATE TABLE pledge (
-  id INTEGER PRIMARY KEY,
+  project_id INTEGER,
+
+
   name TEXT,
   age INTEGER,
   gender CHAR(1),
