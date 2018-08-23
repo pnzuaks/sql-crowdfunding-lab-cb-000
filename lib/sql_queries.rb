@@ -40,7 +40,7 @@ FROM users
 LEFT OUTER JOIN pledges
 ON users.id = pledges.user_id
 GROUP BY users.name;
-
+ORDER BY pledges.amount;
 "
 end
 
